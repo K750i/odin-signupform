@@ -46,11 +46,15 @@ main {
 
 article {
   flex: 1 1 0;
+  margin-bottom: 50px;
 }
 
 .tagline {
   font-family: "Julius Sans One", sans-serif;
-  font-size: calc(36 / 16 * 1rem);
+  font-size: calc(39 / 16 * 1rem);
+  background: linear-gradient(130deg, rgb(30, 30, 30) 5%, white 60%);
+  background-clip: text;
+  color: transparent;
   margin-bottom: 35px;
   padding-left: 50px;
 }
@@ -80,6 +84,7 @@ section.form>form {
 
 .form label {
   margin-top: 21px;
+  font-size: 0.9rem;
   text-transform: uppercase;
   width: calc(100% / 2);
 }
@@ -91,4 +96,40 @@ section.form>form {
 input {
   width: 100%;
   height: 35px;
+}
+
+button[type='submit'] {
+  font-family: inherit;
+  font-size: inherit;
+  margin-top: 33px;
+  margin-bottom: 36px;
+  background: red;
+  border: initial;
+  border-radius: 5px;
+  width: 200px;
+  height: 50px;
+  color: white;
+}
+
+button[type='submit']:hover {
+  background: white;
+  color: red;
+  box-shadow: 0 0 10px 1px orange;
+  cursor: pointer;
+}
+
+form p:last-of-type {
+  font-size: 0.9rem;
+}
+
+form p:last-of-type>a {
+  text-decoration: none;
+  color: red;
+}
+
+@media (max-width: 700px) {
+  main {
+    display: block;
+    padding: 30px;
+  }
 }
