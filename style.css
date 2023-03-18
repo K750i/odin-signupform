@@ -1,5 +1,6 @@
 html {
   box-sizing: border-box;
+  height: 100%;
 }
 
 *,
@@ -24,6 +25,7 @@ ul {
 }
 
 body {
+  height: 100%;
   color: white;
   font-family: Inika, sans-serif;
   background-image:
@@ -35,18 +37,22 @@ body {
 }
 
 main {
+  max-width: 1500px;
+  height: 100%;
   display: flex;
-  margin-top: 80px;
+  padding-top: 80px;
   padding-right: 90px;
 }
 
 .spacer {
-  flex: 1 0 0;
+  flex: 1 2 600px;
 }
 
 article {
-  flex: 1 1 0;
-  margin-bottom: 50px;
+  flex: 1 1 650px;
+  margin-bottom: 150px;
+  min-width: 440px;
+  max-width: 640px;
 }
 
 .tagline {
@@ -83,6 +89,7 @@ section.form>form {
 }
 
 .form label {
+  flex: 1 1 200px;
   margin-top: 21px;
   font-size: 0.9rem;
   text-transform: uppercase;
@@ -120,6 +127,7 @@ button[type='submit']:hover {
 
 form p:last-of-type {
   font-size: 0.9rem;
+  padding-right: 50px;
 }
 
 form p:last-of-type>a {
@@ -127,9 +135,14 @@ form p:last-of-type>a {
   color: red;
 }
 
-@media (max-width: 700px) {
+@media (max-width: 650px) {
   main {
     display: block;
     padding: 30px;
+    padding-top: 80px;
+  }
+
+  .tagline {
+    display: none;
   }
 }
