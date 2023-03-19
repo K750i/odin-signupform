@@ -5,6 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="./script.js" defer></script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
@@ -27,23 +28,25 @@
         </p>
         <section class="form">
           <form action="#">
-            <label for="fname">first name
-              <p><input type="text" name="fname" id="fname"></p>
+            <label for="fname">first name *
+              <p><input type="text" name="fname" id="fname" required></p>
             </label>
-            <label for="lname">last name
-              <p><input type="text" name="lname" id="lname"></p>
+            <label for="lname">last name *
+              <p><input type="text" name="lname" id="lname" required></p>
             </label>
             <label for="email">email
-              <p><input type="email" name="email" id="email"></p>
+              <p><input type="email" name="email" id="email" placeholder="johndoe@firefly.com"></p>
             </label>
             <label for="phone">phone number
               <p><input type="tel" name="phone" id="phone"></p>
             </label>
-            <label for="pass">password
-              <p><input type="password" name="pass" id="pass"></p>
+            <label for="pass">password *
+              <p><input type="password" name="pass" id="pass" minlength="8" required></p>
             </label>
-            <label for="confirmpass">confirm password
-              <p><input type="password" name="confirmpass" id="confirmpass"></p>
+            <label for="confirmpass">confirm password *
+              <p><input type="password" name="confirmpass" id="confirmpass" minlength="8" required>
+              </p>
+              <p><span class="error"></span></p>
             </label>
             <p>
               <button type="submit">Join the Fight</button>
