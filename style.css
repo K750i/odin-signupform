@@ -75,7 +75,7 @@ section.info>p {
 }
 
 section.form {
-  background: hsl(0, 0%, 13%);
+  background: linear-gradient(-55deg, hsl(0, 0%, 13%) 70%, hsl(0, 0%, 18%) 99%);
   padding: 26px 50px;
   padding-right: 0px;
   padding-bottom: 47px;
@@ -149,11 +149,11 @@ span.error {
   text-transform: lowercase;
 }
 
-@media (max-width: 650px) {
+@media (max-width: 40.6rem) {
   main {
     display: block;
     padding: 0;
-    padding-top: 80px;
+    padding-top: 40px;
   }
 
   section.info>p {
